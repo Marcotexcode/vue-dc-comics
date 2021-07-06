@@ -109,7 +109,7 @@ export default {
         justify-content: space-between;
         align-items: center;
         padding: 20px;
-        width: 85%;
+        width: $widthContainer;
         margin: 0 auto;
         height: 90px;
 
@@ -129,7 +129,7 @@ export default {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 13px;
-                    padding-bottom: 30px;
+                    padding-bottom: 100%;
 
                     &:hover, &.active {
                         color: $colorBlue;
