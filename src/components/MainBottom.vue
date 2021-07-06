@@ -6,7 +6,7 @@
 
             <div v-for="(elementi, index) in box" :key="index" class="box">
 
-                <img :src="elementi.src" :alt="elementi.nome">
+                <img :src ="elementi.src" :alt="elementi.nome">
 
                 <h4>{{elementi.nome}}</h4>
 
@@ -30,23 +30,23 @@
 
                 box: [
                     {
-                        src: '../src/assets/img/buy-comics-digital-comics.png',
+                        src: '../image/buy-comics-digital-comics.png',
                         nome: 'digital comics'
                     },
                     {
-                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        src: '../image/buy-comics-merchandise.png',
                         nome: 'dc merchandise'
                     },
                     {
-                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        src: '../image/buy-comics-shop-locator.png',
                         nome: 'subscription'
                     },
                     {
-                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        src: '../image/buy-comics-subscriptions.png',
                         nome: 'comic shop locator'
                     },
                     {
-                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        src: '../image/buy-dc-power-visa.svg',
                         nome: 'dc power visa'
                     },
                 ]
@@ -78,7 +78,7 @@
                 display: flex;
                 align-items: center;
                 img {
-                    width: 70px;
+                    width: 50px;
                     margin-right: 10px;
                 }
 
