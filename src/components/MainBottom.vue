@@ -30,13 +30,25 @@
 
                 box: [
                     {
-                        src: '../assets/img/buy-comics-digital-comics.png',
-                        nome: 'nome'
+                        src: '../src/assets/img/buy-comics-digital-comics.png',
+                        nome: 'digital comics'
                     },
                     {
                         src: 'src/assets/img/buy-comics-digital-comics.png',
-                        nome: 'pippo'
-                    }
+                        nome: 'dc merchandise'
+                    },
+                    {
+                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        nome: 'subscription'
+                    },
+                    {
+                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        nome: 'comic shop locator'
+                    },
+                    {
+                        src: 'src/assets/img/buy-comics-digital-comics.png',
+                        nome: 'dc power visa'
+                    },
                 ]
 
             }

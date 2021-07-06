@@ -11,6 +11,13 @@
       <MainBottom/>
 
     </main>
+
+    <footer>
+
+      <FooterTop/>
+
+
+    </footer>
     
   </div>
 
@@ -21,6 +28,8 @@
   import Header from './components/Header.vue'
   import MainTop from './components/MainTop.vue'
   import MainBottom from './components/MainBottom.vue'
+  import FooterTop from './components/FooterTop.vue'
+
 
 
 
@@ -32,7 +41,8 @@
       
       Header,
       MainTop,
-      MainBottom
+      MainBottom,
+      FooterTop
 
     }
 
