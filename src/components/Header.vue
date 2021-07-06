@@ -114,7 +114,6 @@ export default {
 
         img {
             width: 70px;
-            border: 1px solid #000;
         }
 
         ul {

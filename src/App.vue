@@ -3,10 +3,12 @@
   <div id="app">
 
     <Header/>
-    <MainTop/>
-
 
     <main>
+
+      <MainTop/>
+
+      <MainBottom/>
 
     </main>
     
@@ -18,6 +20,8 @@
 
   import Header from './components/Header.vue'
   import MainTop from './components/MainTop.vue'
+  import MainBottom from './components/MainBottom.vue'
+
 
 
   export default {
@@ -27,8 +31,8 @@
     components: {
       
       Header,
-      MainTop
-
+      MainTop,
+      MainBottom
 
     }
 
