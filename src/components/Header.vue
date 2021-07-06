@@ -99,7 +99,7 @@ export default {
 </script>
 
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 
     @import '../style/variabili.scss';
 
@@ -108,13 +108,13 @@ export default {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
         width: $widthContainer;
         margin: 0 auto;
         height: 90px;
 
         img {
             width: 70px;
+            border: 1px solid #000;
         }
 
         ul {
@@ -129,7 +129,7 @@ export default {
                     text-decoration: none;
                     text-transform: uppercase;
                     font-size: 13px;
-                    padding-bottom: 100%;
+                    padding-bottom: 33px;
 
                     &:hover, &.active {
                         color: $colorBlue;

@@ -22,18 +22,26 @@
 
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 
     @import '../style/variabili.scss';
 
     .container {
         background-color: black;
+
+        .main-top {
+            width: $widthContainer;
+            margin: 0 auto;
+            padding: 40px 0px;
+
+            h2 {
+                color: white;
+            }
+        }
+
+
     }
-    .main-top {
-        width: $widthContainer;
-        margin: 0 auto;
-        padding: 40px 0px;
-        
-    }
+    
+    
 
 </style>
