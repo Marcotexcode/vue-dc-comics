@@ -9,16 +9,13 @@
             <nav>
 
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Home</a></li>
+
+                    <li v-for="(link, index) in links" :key="index">
+
+                        <a :class="link.type == true ? 'active' : ' ' "  :href="link.url">{{link.text}}</a>
+
+                    </li>
+                    
                 </ul>
 
             </nav> 
@@ -38,6 +35,64 @@ export default {
 
     data() {
 
+        return {
+
+            links: [
+
+                {
+                    text: 'characters', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'comics', 
+                    url: '#',
+                    type: true
+                },
+                {
+                    text: 'movies', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'tv', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'games', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'collectibles', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'videos', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'fans', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'news', 
+                    url: '#',
+                    type: false
+                },
+                {
+                    text: 'shop', 
+                    url: '#',
+                    type: false
+                },
+            ]
+
+        }
+
     }
 
 }
@@ -52,11 +107,11 @@ export default {
     header {
         display: flex;
         justify-content: space-between;
-        border: 1px solid #000;
         align-items: center;
         padding: 20px;
-        width: 80%;
+        width: 85%;
         margin: 0 auto;
+        height: 90px;
 
         img {
             width: 70px;
@@ -67,17 +122,18 @@ export default {
             
             li{
                 padding: 20px;
-                list-style: none;
+                list-style: none;  
 
                 a {
                     color: black;
                     text-decoration: none;
                     text-transform: uppercase;
+                    font-size: 13px;
+                    padding-bottom: 30px;
 
-                    &:hover {
-                        color: $colorblue;
-                        border-bottom: 3px solid $colorblue;
-                        padding-bottom: 100%;
+                    &:hover, &.active {
+                        color: $colorBlue;
+                        border-bottom: 3px solid $colorBlue;
                     }
                 }
             }
