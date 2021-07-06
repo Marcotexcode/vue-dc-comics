@@ -1,27 +1,32 @@
 <template>
 
-    <header>
+    <div class="container">
 
-        <img src="../assets/img/dc-logo.png" alt="">
+        <header>
 
-        <nav>
+            <img src="../assets/img/dc-logo.png" alt="">
 
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Home</a></li>
-            </ul>
+            <nav>
 
-        </nav> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
 
-    </header>
+            </nav> 
+
+        </header>
+
+    </div>
+   
 
 </template>
 
@@ -41,14 +46,24 @@ export default {
 
 <style lang="scss" scope>
 
+    @import '../style/variabili.scss';
+
+         
     header {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         border: 1px solid #000;
+        align-items: center;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+
+        img {
+            width: 70px;
+        }
 
         ul {
-            display: flex;
-            align-items: center;
+            display: flex;      
             
             li{
                 padding: 20px;
@@ -57,10 +72,11 @@ export default {
                 a {
                     color: black;
                     text-decoration: none;
+                    text-transform: uppercase;
 
                     &:hover {
-                        color: blue;
-                        border-bottom: 3px solid blue;
+                        color: $colorblue;
+                        border-bottom: 3px solid $colorblue;
                         padding-bottom: 100%;
                     }
                 }
