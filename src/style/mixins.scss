@@ -5,7 +5,8 @@
     border: none;
     text-transform: uppercase;
     color: white;
-
+    cursor: pointer;
+    
     &:hover {
         background-color: lighten($bgc, 30%) ;
     }
