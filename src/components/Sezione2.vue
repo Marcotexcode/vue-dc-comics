@@ -62,15 +62,14 @@
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
+    @import '../style/mixins.scss';
 
     .container {
         background-color: $colorBlue;
         
 
         .main-bottom {
-            width: $widthContainer;
-            margin: 0 auto;
-            padding: 30px;
+            @include containerCentral ();
             display: flex;
             justify-content: space-between;
 

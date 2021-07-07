@@ -102,14 +102,13 @@ export default {
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
-
+    @import '../style/mixins.scss';
          
     header {
+        @include containerCentral ();
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: $widthContainer;
-        margin: 0 auto;
         height: 90px;
 
         img {

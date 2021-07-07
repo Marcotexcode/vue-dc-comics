@@ -19,7 +19,7 @@ export default {
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
-
+    @import '../style/mixins.scss';
 
     .container {
         background-image: url('../assets/img/jumbotron.jpg');
@@ -28,16 +28,11 @@ export default {
         height: 300px;
 
         .jumbo {
-            width: $widthContainer;
-            margin: 0 auto;
+            @include containerCentral ();
             position: relative;
 
             button {
-                border: none;
-                color: white;
-                background-color: $colorBlue;
-                text-transform: uppercase;
-                padding: 10px;
+                @include button ($colorBlue);
                 font-size: 18px;
                 position: absolute;
                 top: 280px;

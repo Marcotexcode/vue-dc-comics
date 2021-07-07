@@ -72,6 +72,7 @@ export default {
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
+    @import '../style/mixins.scss';
 
     .container {
         background-image: url('../assets/img/footer-bg.jpg');    
@@ -84,8 +85,7 @@ export default {
             background-repeat: no-repeat;
 
             .footer-top {
-                width: $widthContainer;
-                margin: 0 auto;
+                @include containerCentral ();
                 display: flex;
                 position: relative;
 

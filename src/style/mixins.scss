@@ -1,0 +1,20 @@
+
+@mixin button($bgc) {
+    background-color: $bgc;
+    padding: 10px 30px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+
+    &:hover {
+        background-color: lighten($bgc, 30%) ;
+    }
+}
+
+@mixin containerCentral() {
+    padding: 30px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+

@@ -5,7 +5,9 @@
         <div class="main-top">
 
             <div class="box">
+
                 <ElementCard v-for="(card,index) in cards" :key="index" :dettagli="card"/>
+
             </div>
 
             <div class="bottone">
@@ -13,13 +15,13 @@
                 <button>load more</button>
 
             </div>
-            
 
         </div>
 
     </div>
     
 </template>
+
 
 <script>
 
@@ -51,19 +53,18 @@
 
 </script>
 
+
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
+    @import '../style/mixins.scss';
 
     .container {
         background-color: #1c1c1c;
 
         .main-top {
-            width: $widthContainer;
-            margin: 0 auto;
-            padding: 10px 0px;
+            @include containerCentral ();
     
-
             .box {
                 display: flex;
                 justify-content: space-between;
@@ -73,12 +74,14 @@
             .bottone {
                 margin: 30px 0px;
                 text-align: center;
+
+                button {
+                    @include button ($colorBlue);
+                }
             }
 
         }
 
     }
-    
-    
 
 </style>

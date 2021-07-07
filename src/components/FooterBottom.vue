@@ -28,16 +28,14 @@ export default {
 <style lang="scss" scoped>
 
     @import '../style/variabili.scss';
-
+    @import '../style/mixins.scss';
 
     .container {
         background-color: #303030;
         
         .footer-bottom {
-            display: flex;
-            padding: 30px;
-            width: $widthContainer;
-            margin: 0 auto;
+            display: flex;           
+            @include containerCentral ();
             justify-content: space-between;
 
             button {
