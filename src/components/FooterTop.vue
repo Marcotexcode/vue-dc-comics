@@ -74,8 +74,7 @@ export default {
     @import '../style/variabili.scss';
 
     .container {
-        background-image: url('../assets/img/footer-bg.jpg');
-        
+        background-image: url('../assets/img/footer-bg.jpg');    
         height: 400px;
         
         .container2 {
@@ -102,7 +101,6 @@ export default {
                     ul {
                         list-style: none;
                         color: rgb(136, 136, 136);
-
                     }
 
                 }
@@ -119,13 +117,7 @@ export default {
             
 
         }
- 
-       
-
        
     }
-
-
-
 
 </style>

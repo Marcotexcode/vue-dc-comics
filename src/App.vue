@@ -4,11 +4,13 @@
 
     <Header/>
 
+    <Jumbotron/>
+
     <main>
 
-      <MainTop/>
+      <Sezione1/>
 
-      <MainBottom/>
+      <Sezione2/>
 
     </main>
 
@@ -27,10 +29,12 @@
 <script>
 
   import Header from './components/Header.vue'
-  import MainTop from './components/MainTop.vue'
-  import MainBottom from './components/MainBottom.vue'
+  import Sezione1 from './components/Sezione1.vue'
+  import Sezione2 from './components/Sezione2.vue'
   import FooterTop from './components/FooterTop.vue'
   import FooterBottom from './components/FooterBottom.vue'
+  import Jumbotron from './components/Jumbotron.vue'
+
 
 
 
@@ -43,10 +47,11 @@
     components: {
       
       Header,
-      MainTop,
-      MainBottom,
+      Sezione1,
+      Sezione2,
       FooterTop,
-      FooterBottom
+      FooterBottom,
+      Jumbotron
 
     }
 

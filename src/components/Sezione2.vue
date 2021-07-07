@@ -22,7 +22,7 @@
 
     export default {
 
-        name:'MainBottom',
+        name:'Sezione2',
 
         data() {
 
@@ -30,23 +30,23 @@
 
                 box: [
                     {
-                        src: '../image/buy-comics-digital-comics.png',
+                        src: require('../assets/img/buy-comics-digital-comics.png'),
                         nome: 'digital comics'
                     },
                     {
-                        src: '../image/buy-comics-merchandise.png',
+                        src: require('../assets/img/buy-comics-merchandise.png'),
                         nome: 'dc merchandise'
                     },
                     {
-                        src: '../image/buy-comics-shop-locator.png',
+                        src: require('../assets/img/buy-comics-subscriptions.png'),
                         nome: 'subscription'
                     },
                     {
-                        src: '../image/buy-comics-subscriptions.png',
+                        src: require('../assets/img/buy-comics-shop-locator.png'),
                         nome: 'comic shop locator'
                     },
                     {
-                        src: '../image/buy-dc-power-visa.svg',
+                        src: require('../assets/img/buy-dc-power-visa.svg'),
                         nome: 'dc power visa'
                     },
                 ]
@@ -78,7 +78,7 @@
                 display: flex;
                 align-items: center;
                 img {
-                    width: 50px;
+                    width: 40px;
                     margin-right: 10px;
                 }
 
